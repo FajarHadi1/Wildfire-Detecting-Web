@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wildfire Monitoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+
+<script>
+    function previewImage(event) {
+        const reader = new FileReader();
+        reader.onload = function () {
+            const output = document.getElementById('preview');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
+
+
+<body>
+    <div class="container">
+        <h1>Wildfire Detecting</h1>
+
+        <div class="content">
+            <!-- Image and buttons -->
+            <div class="image-section">
+                <form action="/predict" method="POST" enctype="multipart/form-data">
+                    <div class="image-container">
+                        <img id="preview" src="forest.jpg" alt="Forest Image" />
+                    </div>
+                    <input type="file" name="image" accept="image/*" onchange="previewImage(event)" required />
+                    <div class="button-group">
+                        <button class="predict-btn" type="submit">Predict</button>
+                        <button class="get-btn" type="button"
+                            onclick="document.querySelector('input[type=file]').click();">
+                            Get Image
+                        </button>
+                    </div>
+                </form>
+                <!-- <div class="image-container">
+                    <img src="forest.jpg" alt="Forest Image" />
+                </div>
+                <div class="button-group">
+                    <button class="predict-btn">Predict</button>
+                    <button class="get-btn">Get Image</button>
+                </div> -->
+            </div>
+
+            <!-- Result and description -->
+            <div class="result-section">
+                <div class="status-box not-wildfire">It’s NOT WILDFIRE</div>
+                <div class="info-box">
+                    <h3>Things you should to know</h3>
+                    <p>
+                        The image <strong>does not</strong> contain signs of wildfire. You
+                        have to keep your forest stay away from fire that you as human
+                        being created.
+                    </p>
+                    <h4>Comparison Percentage</h4>
+                    <div class="bar-static-container">
+                        <div class="bar-static green">Non Wildfire</div>
+                        <div class="bar-static red">Wildfire</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

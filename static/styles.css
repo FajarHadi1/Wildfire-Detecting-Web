@@ -1,0 +1,185 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.image-container img {
+    background-color: #eaf6e9;
+    padding: 1rem;
+    border-radius: 1rem;   
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.get-btn {
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.predict-btn {
+    padding: 1rem 4.3rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #065f2c;
+    color: white;
+}
+
+.get-btn {
+    background-color: #f1fbe9;
+    color: #000;
+}
+
+.result-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+}
+
+.status-box {
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.not-wildfire {
+    background-color: #065f2c;
+    color: white;
+}
+
+.info-box {
+    background-color: #f0f9eb;
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+.info-box h3,
+.info-box h4 {
+    margin-top: 0;
+}
+
+/* .bar-container {
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.bar {
+    flex: 1;
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.bar.green {
+    background-color: #2caa36;
+    width: 80%;
+}
+
+.bar.red {
+    background-color: #c50000;
+    width: 20%;
+} */
+
+.bar-container {
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    height: 2.5rem; /* optional for consistent bar height */
+    background-color: #ddd;
+}
+
+.bar {
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    transition: width 0.6s ease;
+}
+
+.bar.green {
+    background-color: #2caa36;
+}
+
+.bar.red {
+    background-color: #c50000;
+}
+
+.bar-static-container {
+    display: flex;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    height: 2.5rem;
+    background-color: #ddd;
+}
+
+.bar-static {
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+}
+
+.bar-static.green {
+    background-color: #2caa36;
+    width: 50%;
+}
+
+.bar-static.red {
+    background-color: #c50000;
+    width: 50%;
+}
+
+.awaiting {
+    background-color: #cccccc;
+    color: black;
+}
+
+.wildfire {
+  background-color: #c50000;
+  color: white;
+}
