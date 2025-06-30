@@ -29,9 +29,9 @@
             <div class="image-section">
                 <form action="/predict" method="POST" enctype="multipart/form-data">
                     <div class="image-container">
-                        <img id="preview" src="forest.jpg" alt="Forest Image" />
+                        <img id="preview" src="../static/input.png" alt="Forest Image">
                     </div>
-                    <input type="file" name="image" accept="image/*" onchange="previewImage(event)" required />
+                    <!-- <input type="file" name="image" accept="image/*" onchange="previewImage(event)" required /> -->
                     <div class="button-group">
                         <button class="predict-btn" type="submit">Predict</button>
                         <button class="get-btn" type="button"
