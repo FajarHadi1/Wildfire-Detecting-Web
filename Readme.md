@@ -98,6 +98,9 @@ Progress bar and color-coded output displayed on result page.
 Contributions, suggestions, and issues are welcome! <br/>
 Feel free to fork this repository, open a pull request, or raise an issue.
 
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
+
 ## 🙏 Acknowledgements
 - Wildfire Dataset - Kaggle
 - TensorFlow & Keras
