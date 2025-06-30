@@ -94,15 +94,15 @@ Confidence: 92.8%
 Progress bar and color-coded output displayed on result page.
 ![UI Preview](static/UI.png)
 
-
 ## 🧑‍💻 Contributing
 Contributions, suggestions, and issues are welcome! <br/>
 Feel free to fork this repository, open a pull request, or raise an issue.
 
----
-Made by 🔥 Hitoshi
 ## 🙏 Acknowledgements
 - Wildfire Dataset - Kaggle
 - TensorFlow & Keras
 - Flask Framework
 - Open source tools & community ❤️
+
+---
+Made by 🔥 Hitoshi
