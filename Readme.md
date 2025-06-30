@@ -7,6 +7,9 @@ A simple Flask web app that detects wildfire presence in uploaded images using a
 - Display results and confidence levels
 - Visual progress bar comparison
 
+## Dataset
+`https://www.kaggle.com/datasets/abdelghaniaaba/wildfire-prediction-dataset`
+
 ## How to Run
 
 ```bash
