@@ -34,8 +34,10 @@
                     <!-- <input type="file" name="image" accept="image/*" onchange="previewImage(event)" required /> -->
                     <div class="button-group">
                         <button class="predict-btn" type="submit">Predict</button>
+                        <input type="file" name="image" accept="image/*" onchange="previewImage(event)" required
+                            style="display: none;" />
                         <button class="get-btn" type="button"
-                            onclick="document.querySelector('input[type=file]').click();">
+                            onclick="document.querySelector('input[name=image]').click();">
                             Get Image
                         </button>
                     </div>
@@ -70,4 +72,5 @@
         </div>
     </div>
 </body>
+
 </html>
