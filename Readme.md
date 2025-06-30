@@ -99,7 +99,8 @@ Progress bar and color-coded output displayed on result page.
 Contributions, suggestions, and issues are welcome! <br/>
 Feel free to fork this repository, open a pull request, or raise an issue.
 
-
+---
+Made by 🔥 Hitoshi
 ## 🙏 Acknowledgements
 - Wildfire Dataset - Kaggle
 - TensorFlow & Keras
